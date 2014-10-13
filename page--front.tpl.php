@@ -17,7 +17,7 @@
                         <?php endif; ?>
                       </div>    
                   </div>
-    </div>
+    </div><!-- end middentop -->
   <div id="zoekfunctie" class="col-md-3"><?php if ($page['zoek']): ?>
 <?php print render($page['zoek']); ?>
 <?php endif; ?>
