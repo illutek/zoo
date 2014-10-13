@@ -167,11 +167,6 @@ label .element-invisible {display:none !important; visibility:hidden !important;
    transform: translateX(300px);
 }
 
-
-
-
-
-
 /*Mediaqueries*/
 
 	@media only screen and (max-width: 1280px) {}
