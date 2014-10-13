@@ -1,0 +1,18 @@
+; $Id$ 
+name = zoozo
+description = Responsive theme via Bootstrap 
+core = 7.x 
+engine = phptemplate 
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+regions[menu] = menu  
+regions[links] = links homepage 
+regions[midden] = midden homepage
+regions[rechts] = rechts homepage
+regions[zoek] = zoek
+regions[zijbalk] = zijbalk
+regions[taal] = taal
+regions[content] = content 
+regions[voet1] = voet1
+regions[voet2] = voet2
+regions[voet3] = voet3

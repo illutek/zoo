@@ -1,0 +1,209 @@
+/* Google Font */
+@import url(http://fonts.googleapis.com/css?family=Dosis|Roboto);
+/* Pagina */
+body{background-color:#333;font-family: 'Dosis', sans-serif;}
+h1{}
+h2{}
+h3{}
+p{}
+img{width:auto; max-width:100%; height:auto;}
+ul{}
+li{}
+strong{}
+em{}
+a{color:black;}
+
+/* Divs */
+#logo{color:#FFF;font-size:130%;position:relative; z-index:10;margin-top:0px; text-align:center;background-image:url(../images/achterlogo.png);background-repeat:no-repeat;background-position:center bottom;padding-bottom:30px;} 
+.navbar-nav{font-size:120%;font-family: 'Roboto', sans-serif;}
+#zoek{text-align:right;}
+#menu{background-color:#333;position:relative; margin-top:0px; z-index:5;}
+#bestezoo{position:relative; z-index:10;margin-top:-30px;}
+#slideshow{height:400px;text-align:center;margin-top:-80px;position:relative;z-index:0;}
+.slideshowpage{height:250px !important;}
+#innerslideshow{height:50%;float: left;}
+#links, #midden, #rechts{ min-height:225px;}
+#ticket{margin-top:40px;}
+#wereld{background-image:url(../images/wereldkaart.png);background-repeat:no-repeat;background-position:center top;}
+#inhoud{margin:10px 0;background:white;opacity:0.9; padding-bottom:15px;  overflow:hidden;}
+#oranje{text-align:center;background:url(../images/oranje.jpg) no-repeat center center;background-size:cover; height:300px; padding: 50px 0 }
+#footer{color:white;}
+#voet1, #voet2, #voet3 {min-height:50px;}
+
+/* Specifiek */
+#knoppenbalk, .nav, .navbar-nav, .collapse, .navbar-collapse {text-align:center !important;margin:auto !important;}
+#zoekfunctie {margin-top:10px;position:relative;z-index:15;}
+#zoek form{width:100%;text-align:center;}
+#edit-search-block-form--2 {width:145px;height:29px;background-color:#474747;color:white; float:left;border:none; display:inline;background-image:url(../images/zoeklinks.png);background-position:left top; background-repeat:no-repeat;padding-left:15px;margin-left:0px;}
+.form-submit{background-image:url(../images/zoekknop.png);width:31px;height:29px;background-color:#333;text-indent:-9999px; border:none;}
+#fotos img{width:292px;}
+#fotos .dier{width:25%;height:auto;overflow:hidden;float:left;}
+#logo img{height:auto; }
+#footer a{color:white;}
+#footer ul{margin-left:10px;}
+#footer li{list-style-type:square;}
+
+/* Animatie */
+#fotos img{
+	-webkit-transition: all 0.3s ease-in-out;   
+	-moz-transition: all 0.3s ease-in-out;   
+	-o-transition: all 0.3s ease-in-out;   
+	-ms-transition: all 0.3s ease-in-out;   
+	transition: all 0.3s ease-in-out;   
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+   	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   	filter: alpha(opacity=100);    
+	opacity: 1;
+	}
+
+#fotos img:hover{
+	-webkit-transform: scale(2);
+   	-moz-transform: scale(2);
+   	-o-transform: scale(2);
+   	-ms-transform: scale(2);
+   	transform: scale(2);
+	-moz-transform: rotate(10deg);
+-webkit-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+-ms-transform: rotate(10deg);
+transform: rotate(10deg);
+   	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   	filter: alpha(opacity=50);    
+	opacity: 0.5;
+}
+
+/*Bootstrap overschrijven*/
+.navbar-brand {color:#FFF !important;} 
+.navbar-inverse .navbar-nav>li>a{color:#FFF}
+.navbar-inverse{border:none !important;}
+#menu, .navbar ul, .navbar-inverse ul, #menu ul, ul.main-menu {text-align:center !important;}
+ul.main-menu {margin:auto !important;}
+
+/* Drupal */
+.webform-client-form label {width:100px !important;}
+.webform-client-form input, .webform-client-form textarea {border: 1px solid #666;}
+.weather img {width:35px !important;}
+.zoek h2 {display:none;}
+#zoekfunctie content {float:left;}
+#zoekfunctie ul {width:150px !important;float:left;}
+#zoekfunctie li {list-style-type:none;display:inline !important;}
+.language-switcher-locale-url, .textsize_list ul {width:100px !important;float:left !important; margin-top:5px; clear:none !important;}
+.textsize_list li {float:left !important;} .textsize_list img {float:left !important;padding-right:5px !important;}
+#taal ul {width:150px !important;float:left;}
+#taal li {list-style-type:none;display:inline !important;}
+.language-switcher-locale-url, .textsize_list ul {margin-left: -25px; width:100px !important;float:left !important; margin-top:5px; clear:none !important;}
+.textsize_list li {float:left !important;} .textsize_list img {float:left !important;padding-right:5px !important;}
+label .element-invisible {display:none !important; visibility:hidden !important;}
+#taal .display {display:none !important; visibility:hidden !important;}
+
+/* Dierenview 
+
+<div class="buiten">
+      [field_foto]
+     <div class="masker"><h2>[title]</h2><p>[body] </p><a>[view_node]</a></div>
+</div>  
+
+*/ 
+
+ .buiten{ width: 300px; height: 200px; float:left; overflow:hidden; border: 10px solid white;  
+	-webkit-box-shadow: 1px 1px 2px #e6e6e6; 
+	-moz-box-shadow: 1px 1px 2px #e6e6e6; 
+	box-shadow: 1px 1px 2px #e6e6e6;
+	text-align:center;  
+	background: #000 url(../images/bgimg.jpg) no-repeat center center;
+	position:relative; 
+}
+.masker{position:absolute;left:0px;top:0px;width: 300px; height: 200px; overflow: hidden;}
+.buiten h2{background-color: white; opacity:0.5;width:100%;}
+.buiten p{font-style:italic;   
+	-webkit-transition: all 0.2s linear;   
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;   
+	-ms-transition: all 0.2s linear;   
+	}
+.buiten a{padding: 5px 30px; background-color:black;color:white;text-decoration:none;}
+.buiten img{  	overflow:hidden; -webkit-transition: all 0.3s ease-in-out;   
+	-moz-transition: all 0.3s ease-in-out;   
+	-o-transition: all 0.3s ease-in-out;   
+	-ms-transition: all 0.3s ease-in-out;   
+	transition: all 0.3s ease-in-out; 
+	}
+.masker {
+   background-color: rgba(146,96,91,0.3);
+   -webkit-transform: translateX(-300px);
+   -moz-transform: translateX(-300px);
+   -o-transform: translateX(-300px);
+   -ms-transform: translateX(-300px);
+   transform: translateX(-300px);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);    opacity: 1;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.buiten:hover .masker {
+  -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   transform: translateX(0px);
+}
+.buiten:hover img {
+   -webkit-transform: translateX(300px);
+   -moz-transform: translateX(300px);
+   -o-transform: translateX(300px);
+   -ms-transform: translateX(300px);
+   transform: translateX(300px);
+}
+
+
+
+
+
+
+/*Mediaqueries*/
+
+	@media only screen and (max-width: 1280px) {}
+	
+	@media only screen and (max-width: 995px) {
+			#logo{padding-bottom:10px;} 
+			#knoppenbalk{text-align:center;} 
+			.menu{margin:auto !important;} 
+			#zoekfunctie, #taal{display:none;}
+			#bestezoo{display:none;}
+			#slideshow, .slideshowpage{height:200px;margin-top:0px;}
+			#links, #midden, #rechts{ min-height:100px;}
+			#oranje{height:400px; padding: 30px 0 }
+			.icoon{margin:10px 0px; }
+			#icoonlinks{margin-top:20px; }
+			}
+	@media only screen and (max-width: 940px) {
+			/*.navbar button, .navbar-inverse, #middentop{position:absolute;top:0px; right:0px; z-index:20;}*/
+			}
+	
+	@media only screen and (max-width: 590px) {
+			#fotos .dier{width:50%;}			
+			}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
